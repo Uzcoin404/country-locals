@@ -1,0 +1,46 @@
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
+  .banner_girl_img {
+    transform: translateX(-30px);
+  }
+  .banner_popup_1 {
+    left: -120px;
+  }
+  .banner_popup_2 {
+    left: -100px;
+  }
+  .banner_popup_3 {
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  .banner_popup_1 {
+    left: -120px;
+  }
+}
+
+.home_banner_section::before {
+  content: '';
+  position: absolute;
+  background-image: url(/icons/blue-green-shape.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 55% 135%;
+}
+@media screen and (max-width: 1024px) {
+  .home_banner_section::before {
+    width: 135%;
+    height: 145%;
+    background-size: 60% 180%;
+    transform: rotate(54deg);
+  }
+}
+@media screen and (max-width: 640px) {
+  .home_banner_section::before {
+    width: 160%;
+  }
+}
