@@ -216,7 +216,7 @@ const HiddenMobileMenu = ({
                 <div className="hide-scroll relative flex-1 overflow-x-auto overflow-y-hidden rounded-full bg-[#f5f5f5]">
                   <Tab.List className="flex w-max items-center justify-center p-1">
                     {menuItems.map((item) => (
-                      <Tab key={item.id}>
+                      <Tab key={item.id} className="mobile_navbar_tabs">
                         <button
                           type="button"
                           onClick={() => {
@@ -232,6 +232,7 @@ const HiddenMobileMenu = ({
                         </button>
                       </Tab>
                     ))}
+                    <div className="mobile_navbar_indicator"></div>
                   </Tab.List>
                 </div>
               </motion.div>

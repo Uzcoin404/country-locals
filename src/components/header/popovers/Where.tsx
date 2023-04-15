@@ -34,7 +34,7 @@ const WherePopover = ({ stateItems, openMenu }: WherePopoverType) => {
   const [isSelected, setSelected] = useState(people[0]);
 
   const [prevSearches, setPrevSearches] = useState(
-    states[0].cities.splice(5, 5),
+    states[0].cities.splice(0, 5),
   );
   const [prevSearchesActive, setPrevSearchesActive] = useState(false);
 
@@ -111,8 +111,8 @@ const WherePopover = ({ stateItems, openMenu }: WherePopoverType) => {
                         <div
                           className="bg-black"
                           style={{
-                            width: width > 1063 ? 150 : 100,
-                            height: width > 1063 ? 150 : 100,
+                            width: 124,
+                            height: 124,
                           }}
                         ></div>
                       </div>
@@ -237,6 +237,7 @@ const WherePopover = ({ stateItems, openMenu }: WherePopoverType) => {
                   e.preventDefault();
                   setPrevSearchesActive(true);
                 }}
+                // onChange={saveSearchs}
                 className="h-full w-full truncate rounded-lg bg-transparent text-sm outline-none focus:ring-transparent"
               />
               <div

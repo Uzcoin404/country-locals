@@ -147,7 +147,7 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="w-5/12 xl:w-1/3">
-                  {/* <div
+                  <div
                     className={`header_center_menu group flex origin-top transform items-center justify-between rounded-full border border-[#E5E7EB] bg-white shadow-md transition duration-200 ease-in hover:shadow-lg ${
                       isOpen
                         ? 'invisible translate-y-8 scale-150 opacity-0'
@@ -187,8 +187,8 @@ const Header = () => {
                         </span>
                       </span>
                     </button>
-                  </div> */}
-                  <div className="relative z-[9999] flex w-full items-center justify-between rounded-xl bg-black px-4 py-1.5">
+                  </div>
+                  {/* <div className="relative z-[9999] flex w-full items-center justify-between rounded-xl bg-black px-4 py-1.5">
                     <div className="relative flex h-10 items-center justify-start gap-3 px-4 text-white">
                       {primaryMenuItems.map((item, i) => (
                         <div
@@ -212,7 +212,7 @@ const Header = () => {
                         <HeaderIcon />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <HiddenMenuPrimary
                     menuItems={secondaryMenuItems}
                     isOpen={isOpen}
@@ -319,41 +319,42 @@ const Header = () => {
               <button
                 type="button"
                 onClick={() => handlePrimaryNavClick(1)}
-                className={`my-2 flex w-full items-center rounded-full border border-[#E5E7EB] bg-white py-2 pl-[10px] pr-5 ${
+                className={`mt-2 flex w-full items-center rounded-full border border-[#E5E7EB] bg-white py-2 pl-[10px] pr-5 ${
                   globalOverflow ? 'hidden' : ''
                 }`}
                 style={{
                   boxShadow: '0 3px 10px rgba(0, 0, 0, .10)',
                 }}
               >
-                <div className="pl-3 text-left">
-                  <div className="text-[##717171] text-[12px] opacity-75">
-                    <span className="overflow-hidden text-ellipsis whitespace-nowrap text-xs">
-                      What
-                    </span>
-                    <span className="px-[6px]">•</span>
-                    <span className="overflow-hidden text-ellipsis whitespace-nowrap text-xs">
-                      Where
-                    </span>
-                    <span className="px-[6px]">•</span>
-                    <span className="overflow-hidden text-ellipsis whitespace-nowrap text-xs">
-                      When
-                    </span>
-                    <span className="px-[6px]">•</span>
-                    <span className="overflow-hidden text-ellipsis whitespace-nowrap text-xs">
-                      Who
-                    </span>
-                  </div>
-                </div>
                 <div className="item flex h-10 w-10 justify-center rounded-full border-2 border-[#E5E7EB]">
                   <div className="svg_icon flex w-5 shrink-0 items-center justify-center text-transparent">
                     <SearchBlackIcon />
                   </div>
                 </div>
+                <div className="pl-3 text-left">
+                  <p className="font-sm font-semibold leading-tight">What?</p>
+                  <div className="text-[##717171] text-[12px] opacity-75">
+                    <span className="overflow-hidden text-ellipsis whitespace-nowrap">
+                      Category
+                    </span>
+                    <span className="px-[6px]">•</span>
+                    <span className="overflow-hidden text-ellipsis whitespace-nowrap">
+                      Where
+                    </span>
+                    <span className="px-[6px]">•</span>
+                    <span className="overflow-hidden text-ellipsis whitespace-nowrap">
+                      When
+                    </span>
+                    <span className="px-[6px]">•</span>
+                    <span className="overflow-hidden text-ellipsis whitespace-nowrap">
+                      Who
+                    </span>
+                  </div>
+                </div>
               </button>
             </div> */}
 
-            <div className="relative flex w-full items-center justify-between rounded-xl bg-black py-1.5 pl-2 pr-4">
+            {/* <div className="relative flex w-full items-center justify-between rounded-xl bg-black py-1.5 pl-2 pr-4">
               <div className="relative flex h-10 items-center justify-start gap-4 px-2 font-semibold text-white">
                 {primaryMenuItems.map((item, i) => (
                   <div
@@ -371,11 +372,14 @@ const Header = () => {
                 aria-hidden
                 onClick={() => handlePrimaryNavClick(1)}
               >
-                <div className="relative ml-2 flex shrink-0 items-center justify-center text-3xl text-white">
-                  <HeaderIcon />
+                <div className="relative ml-2 flex shrink-0 cursor-pointer items-center justify-center text-3xl text-white">
+                  <span style={{ fontSize: 12 }} className="mr-1">
+                    MENU
+                  </span>
+                  <HeaderIcon width={12} height={12} />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <HiddenMobileMenu
               menuItems={secondaryMenuItems}
