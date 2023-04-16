@@ -354,7 +354,7 @@ const Header = () => {
               </button>
             </div> */}
 
-            {/* <div className="relative flex w-full items-center justify-between rounded-xl bg-black py-1.5 pl-2 pr-4">
+            <div className="relative flex w-full items-center justify-between rounded-xl bg-black py-1.5 pl-2 pr-4">
               <div className="relative flex h-10 items-center justify-start gap-4 px-2 font-semibold text-white">
                 {primaryMenuItems.map((item, i) => (
                   <div
@@ -379,7 +379,7 @@ const Header = () => {
                   <HeaderIcon width={12} height={12} />
                 </div>
               </div>
-            </div> */}
+            </div>
 
             <HiddenMobileMenu
               menuItems={secondaryMenuItems}
