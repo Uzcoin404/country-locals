@@ -376,7 +376,46 @@ const Header = () => {
                   <span style={{ fontSize: 12 }} className="mr-1">
                     MENU
                   </span>
-                  <HeaderIcon width={12} height={12} />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={12}
+                    height={12}
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <rect
+                      x="5"
+                      y="5"
+                      width="0.35em"
+                      height="0.35em"
+                      rx="2"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="25"
+                      y="5"
+                      width="0.35em"
+                      height="0.35em"
+                      rx="2"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="25"
+                      y="25"
+                      width="0.35em"
+                      height="0.35em"
+                      rx="2"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="5"
+                      y="25"
+                      width="0.35em"
+                      height="0.35em"
+                      rx="2"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>

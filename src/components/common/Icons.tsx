@@ -1,10 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable linebreak-style */
-const HeaderIcon = ({ width = '1em', height = '1em' }) => (
+const HeaderIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={width}
-    height={height}
+    width={'1em'}
+    height={'1em'}
     viewBox="0 0 40 40"
     fill="none"
   >
